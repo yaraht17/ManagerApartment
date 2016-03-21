@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <RelativeLayout
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:background="@drawable/khung_icon">
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/thong_tin_icon"
             android:layout_centerInParent="true"
             android:id="@+id/imgIconItem"/>
-        <TextView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+        <com.ezbms.building.buildingapp.view.MyTextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginTop="5dp"
             android:text="10"
             android:gravity="center"
@@ -27,11 +27,11 @@
             android:textSize="10sp" />
     </RelativeLayout>
 
-    <TextView
+    <com.ezbms.building.buildingapp.view.MyTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Gym"
-        android:textColor="#000"
+        android:textColor="@color/white"
         android:id="@+id/txt_titleItem"/>
 
 </LinearLayout>

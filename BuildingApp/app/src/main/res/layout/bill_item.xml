@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:padding="10dp">
-        <TextView
+        <com.ezbms.building.buildingapp.view.MyTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tiền Nhà:"
@@ -16,7 +16,7 @@
             android:textSize="@dimen/large_text_size"
             android:id="@+id/txt_nameBill"
             android:layout_centerVertical="true"/>
-        <TextView
+        <com.ezbms.building.buildingapp.view.MyTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"

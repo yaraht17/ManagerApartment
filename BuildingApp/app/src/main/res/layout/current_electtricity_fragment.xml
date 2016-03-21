@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/listview">
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/click_navbar">
+            <com.ezbms.building.buildingapp.view.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/tablayout"
+                android:textSize="20sp"
+                android:text="CHI TIẾT TIỀN ĐIỆN THÁNG 9"/>
+            <com.ezbms.building.buildingapp.view.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="50dp"
+                android:text="TIỀN ĐIỆN 4 THÁNG LÀ: 2.500.000 VND \nTình trạng: chưa thanh toán" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <com.ezbms.building.buildingapp.view.MyButton
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Thanh Toán"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnPayAll"
+                android:background="@drawable/btn_thanhtoan"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

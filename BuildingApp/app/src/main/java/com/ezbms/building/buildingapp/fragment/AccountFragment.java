@@ -50,7 +50,7 @@ public class AccountFragment extends MyFragment {
         btnItemRight.setVisibility(View.VISIBLE);
         btnItemRight.setImageResource(R.drawable.btn_setting_click);
         txt_title = (TextView) findViewById(R.id.txt_title);
-        txt_title.setText("Thông tin cá nhân");
+        txt_title.setText("THÔNG TIN CÁ NHÂN");
     }
 
     @Override

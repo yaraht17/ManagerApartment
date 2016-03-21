@@ -26,12 +26,10 @@ public class MyTextView extends TextView {
     }
 
     public void init() {
-        /*
-        setFont mac dinh cho TextView trong assets chu cai font nay
         Typeface myTypeface =
                 Typeface.createFromAsset(getContext().getAssets(),
-                        "fonts/Roboto-Light.ttf");
-        setTypeface(myTypeface);*/
+                        "fonts/MYRIADPRO-REGULAR.OTF");
+        setTypeface(myTypeface);
     }
 
 }

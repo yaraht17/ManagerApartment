@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.ezbms.building.buildingapp.R;
 import com.ezbms.building.buildingapp.entity.ServiceEntity;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -54,6 +55,11 @@ public class ServiceAdapter extends MyArrayAdapter<ServiceEntity> {
 
             }
         });
+
+        /*Picasso.with(context).load(R.drawable.img_clearer)
+                .resize(120,120)
+                .into(holder.imageViewService);*/
+
         return convertView;
     }
 

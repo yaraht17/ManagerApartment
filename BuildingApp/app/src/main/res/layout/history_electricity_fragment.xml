@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.ezbms.building.buildingapp.view.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Lượng tiêu thụ điện 12 tháng gần nhất"
+        android:textColor="@color/click_navbar"
+        android:padding="10dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/bieudo"/>
+    <com.ezbms.building.buildingapp.view.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Chi tiết tiền điện từng tháng"
+        android:textColor="@color/tablayout"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.ezbms.building.buildingapp.view.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="16sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@color/tablayout"
+            android:textColor="@color/white"
+            android:text="Tháng 1/2015"
+            android:id="@+id/txt_month"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lich"
+            android:layout_toRightOf="@id/txt_month"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/imgMonth"/>
+    </RelativeLayout>
+
+    <com.ezbms.building.buildingapp.view.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Số điện đã tiêu thụ: 150 số\nTổng số tiền điện tháng 1/2015: 1.300.000 VND\nVAT: 10%\nTổng hóa đơn phải thanh toán: 1.400.000 VND\nTrạng thái đã hoàn thành"/>
+
+</LinearLayout>

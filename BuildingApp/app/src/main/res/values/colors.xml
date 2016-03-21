@@ -5,7 +5,9 @@
     <color name="colorAccent">#FF4081</color>
     <color name="color_tab">#5555</color>
     <color name="white">#fff</color>
-    <color name="tablayout">#048a81</color>
-    <color name="bg_main">#1d2029</color>
+    <color name="tablayout">#00a79d</color>
+    <color name="bg_main">#1e222b</color>
     <color name="text_name_service">#00a89a</color>
+    <color name="click_navbar">#026a63</color>
+    <color name="trans">#00000000</color>
 </resources>

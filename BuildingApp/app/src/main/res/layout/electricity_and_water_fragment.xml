@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#038a83">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/layout_cureent">
+            <com.ezbms.building.buildingapp.view.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hiện Tại"
+                android:textColor="@color/white"
+                android:id="@+id/txt_poster"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="@dimen/large_text_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/layout_history"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <com.ezbms.building.buildingapp.view.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lịch Sử"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:id="@+id/txt_file"
+                android:gravity="center"
+                android:textSize="@dimen/large_text_size"/>
+        </LinearLayout>
+    </LinearLayout>
+        <FrameLayout
+            android:id="@+id/frameMain2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+</LinearLayout>

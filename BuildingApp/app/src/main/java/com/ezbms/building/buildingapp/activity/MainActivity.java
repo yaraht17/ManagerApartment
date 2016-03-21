@@ -15,6 +15,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.ezbms.building.buildingapp.R;
@@ -32,6 +33,7 @@ public class MainActivity extends MySlidingMenuActivity {
 
     SoftKeyboard softKeyboard;//dung an hien thanh tabbar
     LinearLayout layout_tab_controller;
+    RelativeLayout layoutCountService,layoutCountContact,layoutCountHome,layoutCountPay,layoutCountAccount;
     @Override
     public void refreshData(Intent intent) {
 
@@ -65,55 +67,125 @@ public class MainActivity extends MySlidingMenuActivity {
         txtCountService.setVisibility(View.GONE);
         txtCountAccount.setVisibility(View.GONE);
 
-        btnService.setOnClickListener(this);
-        btnContact.setOnClickListener(this);
-        btnHome.setOnClickListener(this);
-        btnPay.setOnClickListener(this);
-        btnAccount.setOnClickListener(this);
+        layoutCountService = (RelativeLayout) findViewById(R.id.layout_dichvu);
+        layoutCountContact = (RelativeLayout) findViewById(R.id.layout_lienhe);
+        layoutCountHome = (RelativeLayout) findViewById(R.id.layout_home);
+        layoutCountPay = (RelativeLayout) findViewById(R.id.layout_thanhtoan);
+        layoutCountAccount = (RelativeLayout) findViewById(R.id.layout_taikhoan);
 
-        btnService.performClick();
+        layoutCountAccount.setOnClickListener(this);
+        layoutCountPay.setOnClickListener(this);
+        layoutCountHome.setOnClickListener(this);
+        layoutCountService.setOnClickListener(this);
+        layoutCountContact.setOnClickListener(this);
+
+        layoutCountService.performClick();
     }
 
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btnService:
+            case R.id.layout_dichvu:
                 actionSevice();
                 break;
-            case R.id.btnContact:
+            case R.id.layout_lienhe:
                 actionContact();
                 break;
-            case R.id.btnHome:
+            case R.id.layout_home:
                 actionHome();
                 break;
-            case R.id.btnPay:
+            case R.id.layout_thanhtoan:
                 actionPay();
                 break;
-            case R.id.btnAccount:
+            case R.id.layout_taikhoan:
                 actionAccount();
                 break;
         }
     }
 
     private void actionSevice() {
+        backAllStackFragment();
         replaceFragment(new ServiceFragment(), R.id.frameMain, false);
+        btnService.setImageResource(R.drawable.dich_vu_click);
+        btnContact.setImageResource(R.drawable.lien_he);
+        btnHome.setImageResource(R.drawable.home);
+        btnPay.setImageResource(R.drawable.thanh_toan);
+        btnAccount.setImageResource(R.drawable.account);
+
+        layoutCountService.setBackgroundColor(getResources().getColor(R.color.click_navbar));
+        layoutCountContact.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountHome.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountPay.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountAccount.setBackgroundColor(getResources().getColor(R.color.tablayout));
     }
 
     private void actionContact() {
+        backAllStackFragment();
         replaceFragment(new ContactFragment(), R.id.frameMain, false);
+        btnService.setImageResource(R.drawable.dich_vu);
+        btnContact.setImageResource(R.drawable.lien_he_click);
+        btnHome.setImageResource(R.drawable.home);
+        btnPay.setImageResource(R.drawable.thanh_toan);
+        btnAccount.setImageResource(R.drawable.account);
+
+        layoutCountService.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountContact.setBackgroundColor(getResources().getColor(R.color.click_navbar));
+        layoutCountHome.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountPay.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountAccount.setBackgroundColor(getResources().getColor(R.color.tablayout));
+
     }
 
     private void actionHome() {
+        backAllStackFragment();
         replaceFragment(new HomeFragment(), R.id.frameMain, false);
+
+        btnService.setImageResource(R.drawable.dich_vu);
+        btnContact.setImageResource(R.drawable.lien_he);
+        btnHome.setImageResource(R.drawable.home_click);
+        btnPay.setImageResource(R.drawable.thanh_toan);
+        btnAccount.setImageResource(R.drawable.account);
+
+        layoutCountService.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountContact.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountHome.setBackgroundColor(getResources().getColor(R.color.click_navbar));
+        layoutCountPay.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountAccount.setBackgroundColor(getResources().getColor(R.color.tablayout));
     }
 
     private void actionPay() {
+        backAllStackFragment();
         replaceFragment(new PayFragment(), R.id.frameMain, false);
+
+        btnService.setImageResource(R.drawable.dich_vu);
+        btnContact.setImageResource(R.drawable.lien_he);
+        btnHome.setImageResource(R.drawable.home);
+        btnPay.setImageResource(R.drawable.thanh_toan_click);
+        btnAccount.setImageResource(R.drawable.account);
+
+        layoutCountService.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountContact.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountHome.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountPay.setBackgroundColor(getResources().getColor(R.color.click_navbar));
+        layoutCountAccount.setBackgroundColor(getResources().getColor(R.color.tablayout));
     }
 
     private void actionAccount() {
+        backAllStackFragment();
         replaceFragment(new AccountFragment(), R.id.frameMain, false);
+
+        btnService.setImageResource(R.drawable.dich_vu);
+        btnContact.setImageResource(R.drawable.lien_he);
+        btnHome.setImageResource(R.drawable.home);
+        btnPay.setImageResource(R.drawable.thanh_toan);
+        btnAccount.setImageResource(R.drawable.account_click);
+
+        layoutCountService.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountContact.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountHome.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountPay.setBackgroundColor(getResources().getColor(R.color.tablayout));
+        layoutCountAccount.setBackgroundColor(getResources().getColor(R.color.click_navbar));
     }
 
 
@@ -172,6 +244,12 @@ public class MainActivity extends MySlidingMenuActivity {
         });
     }
 
+    //popbackStack tat ca truoc khi nhan click tren tab dieu huong
+    public void backAllStackFragment(){
+        for(int i = 0; i < fragmentManager.getBackStackEntryCount(); ++i) {
+            fragmentManager.popBackStack();
+        }
+    }
     //co ham nay thi khi an backbutton no se thoat het fragment => onBackPressd
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {

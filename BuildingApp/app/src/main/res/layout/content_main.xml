@@ -29,34 +29,30 @@
             android:layout_height="wrap_content"
             android:background="@color/tablayout"
             android:orientation="horizontal"
-            android:paddingBottom="5dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
             android:layout_gravity="bottom|end"
-            android:paddingTop="5dp"
+            android:weightSum="5"
             android:id="@+id/layout_tab_controller">
 
             <RelativeLayout
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
-                android:clickable="false"
-                android:descendantFocusability="blocksDescendants"
-                android:focusable="false"
-                android:focusableInTouchMode="false">
+                android:id="@+id/layout_dichvu"
+                android:descendantFocusability="blocksDescendants">
 
                 <ImageButton
                     android:id="@+id/btnService"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:background="@android:color/transparent"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
                     android:clickable="false"
                     android:scaleType="centerInside"
-                    android:src="@drawable/icon_dichvu"
+                    android:src="@drawable/dich_vu"
                     android:layout_centerInParent="true"/>
 
                 <TextView
@@ -72,32 +68,27 @@
                     android:textSize="10sp" />
             </RelativeLayout>
 
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
             <RelativeLayout
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
-                android:clickable="false"
                 android:descendantFocusability="blocksDescendants"
-                android:focusable="false"
-                android:focusableInTouchMode="false">
+                android:id="@+id/layout_lienhe"
+                android:padding="8dp">
 
                 <ImageButton
                     android:id="@+id/btnContact"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:background="@android:color/transparent"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
                     android:clickable="false"
                     android:scaleType="centerInside"
-                    android:src="@drawable/icon_lienhe"
+                    android:src="@drawable/lien_he"
                     android:layout_centerInParent="true"/>
 
                 <TextView
@@ -114,32 +105,27 @@
             </RelativeLayout>
 
 
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
             <RelativeLayout
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
-                android:clickable="false"
                 android:descendantFocusability="blocksDescendants"
-                android:focusable="false"
-                android:focusableInTouchMode="false">
+                android:id="@+id/layout_home"
+                android:padding="8dp">
 
                 <ImageButton
                     android:id="@+id/btnHome"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:background="@android:color/transparent"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
                     android:clickable="false"
                     android:scaleType="centerInside"
-                    android:src="@drawable/icon_home"
+                    android:src="@drawable/home"
                     android:layout_centerInParent="true"/>
 
                 <TextView
@@ -155,32 +141,28 @@
                     android:textSize="10sp" />
             </RelativeLayout>
 
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
 
             <RelativeLayout
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
-                android:clickable="false"
                 android:descendantFocusability="blocksDescendants"
-                android:focusable="false"
-                android:focusableInTouchMode="false">
+                android:id="@+id/layout_thanhtoan"
+                android:padding="8dp">
 
                 <ImageButton
                     android:id="@+id/btnPay"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:background="@android:color/transparent"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
                     android:clickable="false"
                     android:scaleType="centerInside"
-                    android:src="@drawable/icon_thanh_toan"
+                    android:src="@drawable/thanh_toan"
                     android:layout_centerInParent="true"/>
 
                 <TextView
@@ -196,32 +178,28 @@
                     android:textSize="10sp" />
             </RelativeLayout>
 
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
 
             <RelativeLayout
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
-                android:clickable="false"
+                android:id="@+id/layout_taikhoan"
                 android:descendantFocusability="blocksDescendants"
-                android:focusable="false"
-                android:focusableInTouchMode="false">
+                android:padding="8dp">
 
                 <ImageButton
                     android:id="@+id/btnAccount"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:adjustViewBounds="true"
-                    android:background="@null"
+                    android:background="@android:color/transparent"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
                     android:clickable="false"
                     android:scaleType="centerInside"
-                    android:src="@drawable/icon_account"
+                    android:src="@drawable/account"
                     android:layout_centerInParent="true"/>
 
                 <TextView

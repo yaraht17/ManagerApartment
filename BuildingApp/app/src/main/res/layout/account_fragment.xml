@@ -18,15 +18,16 @@
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:src="@drawable/logo_conmpany"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nv_icon"
         app:civ_border_width="2dp"
         app:civ_border_color="#FF000000"/>
-    <TextView
+    <com.ezbms.building.buildingapp.view.MyTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:textSize="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:text="Lê Minh Hoàng"
         android:id="@+id/txt_nameAccount"
         android:textStyle="bold"
@@ -38,14 +39,14 @@
         android:layout_marginTop="10dp"
         android:padding="@dimen/medium_margin">
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_centerVertical="true"
             android:src="@drawable/address_icon"
             android:layout_marginLeft="@dimen/medium_margin"
             android:layout_marginRight="10dp"
             android:id="@+id/img4"/>
-        <TextView
+        <com.ezbms.building.buildingapp.view.MyTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -64,14 +65,14 @@
         android:layout_marginTop="10dp"
         android:padding="@dimen/medium_margin">
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_centerVertical="true"
             android:src="@drawable/phone"
             android:layout_marginLeft="@dimen/medium_margin"
             android:layout_marginRight="10dp"
             android:id="@+id/img5"/>
-        <TextView
+        <com.ezbms.building.buildingapp.view.MyTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -90,14 +91,14 @@
         android:layout_marginTop="10dp"
         android:padding="@dimen/medium_margin">
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_centerVertical="true"
             android:src="@drawable/mai_accountl"
             android:layout_marginLeft="@dimen/medium_margin"
             android:layout_marginRight="10dp"
             android:id="@+id/img6"/>
-        <TextView
+        <com.ezbms.building.buildingapp.view.MyTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -116,14 +117,14 @@
         android:layout_marginTop="10dp"
         android:padding="@dimen/medium_margin">
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_centerVertical="true"
             android:src="@drawable/more_icon"
             android:layout_marginLeft="@dimen/medium_margin"
             android:layout_marginRight="10dp"
             android:id="@+id/img9"/>
-        <TextView
+        <com.ezbms.building.buildingapp.view.MyTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"

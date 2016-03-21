@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listAllBill">
+
+        </ListView>
+        <com.ezbms.building.buildingapp.view.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng: "
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/viewAll"
+            android:textColor="@color/white"
+            android:layout_below="@id/listAllBill"/>
+        <com.ezbms.building.buildingapp.view.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAllMoney"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:text="500.000 VND"
+            android:layout_toRightOf="@id/viewAll"
+            android:layout_below="@id/listAllBill"
+            android:textColor="@color/white" />
+        <com.ezbms.building.buildingapp.view.MyButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Thanh Toán"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtAllMoney"
+            android:id="@+id/btnPayAll"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/btn_thanhtoan"/>
+    </RelativeLayout>
+</LinearLayout>

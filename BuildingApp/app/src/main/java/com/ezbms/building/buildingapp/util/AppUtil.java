@@ -49,6 +49,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ezbms.building.buildingapp.R;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.RequestCreator;
 
 /**
  * Created by Hoang on 2/27/2016.
@@ -159,6 +161,26 @@ public class AppUtil implements AppConstants{
         bundle.putString(KEY_CLASS_NAME, builder.toString());
         refreshIntent.putExtras(bundle);
         context.sendBroadcast(refreshIntent);
+    }
+
+    public static Picasso getPicasso(Context context) {
+        return Picasso.with(context);
+    }
+
+    public static RequestCreator getPicassoFileOrUrl(Context context, String filePath){
+        if(filePath.startsWith("http")){
+            return getPicassoUrl(context, filePath);
+        }
+        else{
+            return getPicasso(context).load(new File(filePath));
+        }
+    }
+
+    public static RequestCreator getPicassoUrl(Context context, String url){
+        if(TextUtils.isEmpty(url)){
+            return getPicasso(context).load("http://").tag(context);
+        }
+        return getPicasso(context).load(url).tag(context);
     }
 
     /*

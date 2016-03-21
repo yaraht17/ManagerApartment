@@ -51,7 +51,7 @@ public class ServiceFragment extends MyFragment {
         super.onActivityCreated(savedInstanceState);
         //header
         txt_title = (TextView) findViewById(R.id.txt_title);
-        txt_title.setText("Dịch vụ vệ sinh");
+        txt_title.setText("DỊCH VỤ VỆ SINH");
         btnItemLeft = (ImageView) findViewById(R.id.btnItemLeft);
         btnItemLeft.setImageResource(R.drawable.menu_icon);
         btnItemLeft.setVisibility(View.VISIBLE);
@@ -74,7 +74,6 @@ public class ServiceFragment extends MyFragment {
     private void displayCategory() {
         categoryAdapter.add("Dịch vụ vệ sinh");
         categoryAdapter.add("Dịch vụ Massage");
-        categoryAdapter.add("Dịch vụ Gái Gọi");
     }
 
     private void displayListService() {

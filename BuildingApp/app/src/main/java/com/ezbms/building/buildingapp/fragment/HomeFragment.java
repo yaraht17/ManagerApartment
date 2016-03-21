@@ -17,6 +17,7 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 import com.ezbms.building.buildingapp.R;
+import com.ezbms.building.buildingapp.activity.MainActivity;
 import com.ezbms.building.buildingapp.adapter.ItemAdapter;
 import com.ezbms.building.buildingapp.entity.Item;
 
@@ -53,7 +54,7 @@ public class HomeFragment extends MyFragment {
         super.onActivityCreated(savedInstanceState);
 
         txt_title = (TextView) findViewById(R.id.txt_title);//header
-        txt_title.setText("Trang Chủ");
+        txt_title.setText("TRANG CHỦ");
 
         items = new ArrayList<>();
         gridView = (GridView) findViewById(R.id.gridView);
@@ -70,7 +71,17 @@ public class HomeFragment extends MyFragment {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                switch (position){
+                    case 0:
+                        ((MainActivity) getActivity()).replaceFragment(new NotificationFragment(), R.id.frameMain, true);
+                        break;
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                }
             }
         });
 

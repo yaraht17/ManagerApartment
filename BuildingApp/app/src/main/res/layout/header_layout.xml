@@ -5,17 +5,18 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:background="@color/tablayout"
         android:padding="10dp">
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_centerVertical="true"
             android:id="@+id/btnItemLeft"
             android:visibility="gone"
+            android:background="@android:color/transparent"
             android:layout_alignParentLeft="true"/>
-        <TextView
+        <com.ezbms.building.buildingapp.view.MyTextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_centerVertical="true"
@@ -29,6 +30,7 @@
             android:layout_centerVertical="true"
             android:id="@+id/btnItemRight"
             android:visibility="gone"
+            android:background="@android:color/transparent"
             android:layout_alignParentRight="true"/>
     </RelativeLayout>
 

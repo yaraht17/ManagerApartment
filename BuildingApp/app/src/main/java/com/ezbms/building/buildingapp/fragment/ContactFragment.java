@@ -16,6 +16,7 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 import com.ezbms.building.buildingapp.R;
+import com.ezbms.building.buildingapp.activity.MainActivity;
 import com.ezbms.building.buildingapp.adapter.ItemAdapter;
 import com.ezbms.building.buildingapp.entity.Item;
 
@@ -52,7 +53,7 @@ public class ContactFragment extends MyFragment {
         super.onActivityCreated(savedInstanceState);
 
         txt_title = (TextView) findViewById(R.id.txt_title);//header
-        txt_title.setText("Liên Hệ");
+        txt_title.setText("LIÊN HỆ");
 
         items = new ArrayList<>();
         gridView = (GridView) findViewById(R.id.gridView);
@@ -69,7 +70,19 @@ public class ContactFragment extends MyFragment {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                switch (position){
+                    case 0:
+                        ((MainActivity) getActivity()).replaceFragment(new InternalMailboxFragment(),R.id.frameMain, true);
+                        break;
+                    case 1:
+                        break;
+                    case 2:
+                        ((MainActivity) getActivity()).replaceFragment(new ContactOnlineFragment(),R.id.frameMain, true);
+                        break;
+                    case 3:
+                        ((MainActivity) getActivity()).replaceFragment(new RequestFragment(),R.id.frameMain, true);
+                        break;
+                }
             }
         });
 

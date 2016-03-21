@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@color/bg_main"
     android:layout_width="match_parent"
-    android:layout_height="120dp">
+    android:layout_height="104dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -16,7 +17,8 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_centerVertical="true"
-            android:src="@drawable/logo_conmpany"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nv_icon"
             app:civ_border_width="2dp"
             app:civ_border_color="#FF000000"/>
 
@@ -27,16 +29,16 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/medium_margin"
             android:layout_toRightOf="@id/imageView">
-            <TextView
+            <com.ezbms.building.buildingapp.view.MyTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/large_text_size"
                 android:textColor="@color/white"
-                android:id="@+id/txt_nameContactOnlie"
+                android:id="@+id/txt_nameContactOnline"
                 android:layout_marginBottom="@dimen/small_margin"
                 android:textStyle="bold"
                 android:text="Nguyễn Minh Quang"/>
-            <TextView
+            <com.ezbms.building.buildingapp.view.MyTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/medium_text_size"
@@ -45,7 +47,7 @@
                 android:id="@+id/txt_positionContactOnline"
                 android:text="(Quản lí điện nước)" />
 
-            <TextView
+            <com.ezbms.building.buildingapp.view.MyTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/medium_text_size"
@@ -61,7 +63,7 @@
             android:src="@drawable/lien_he_truc_tuyen"
             android:layout_marginRight="2dp"
             android:layout_alignParentRight="true"
-            android:id="@+id/img_arrow"
+            android:id="@+id/btnCall"
             android:layout_centerVertical="true"/>
 
     </RelativeLayout>

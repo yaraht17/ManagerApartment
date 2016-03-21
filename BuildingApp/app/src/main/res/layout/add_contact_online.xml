@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_layout"
+        android:id="@+id/headerLayout"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_conmpany"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/imageView">
+        <com.ezbms.building.buildingapp.view.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/click_navbar"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:textStyle="bold"
+            android:text="Tên Liên Lạc"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="7dp"
+                android:paddingLeft="5dp"
+                android:id="@+id/edtNameContact"
+                android:textColor="@color/white"
+                android:background="@android:color/transparent"/>
+        <com.ezbms.building.buildingapp.view.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:textColor="@color/white"
+            android:background="@drawable/line" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imgPlus"
+            android:layout_centerVertical="true"
+            android:src="@drawable/plus"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="5dp"
+            android:hint="Add phone"
+            android:inputType="phone"
+            android:textColorHint="@color/click_navbar"
+            android:id="@+id/edtPhoneContact"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgPlus"
+            android:textColor="@color/tablayout"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+    <com.ezbms.building.buildingapp.view.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textColor="@color/white"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imgPlus1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/plus"/>
+        <com.ezbms.building.buildingapp.view.MyEditText
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="5dp"
+            android:hint="Add address"
+            android:textColorHint="@color/click_navbar"
+            android:id="@+id/edtAddressContact"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgPlus1"
+            android:textColor="@color/tablayout"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textColor="@color/white"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imgPlus2"
+            android:layout_centerVertical="true"
+            android:src="@drawable/plus"/>
+        <com.ezbms.building.buildingapp.view.MyEditText
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="5dp"
+            android:hint="Add email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/click_navbar"
+            android:id="@+id/edtEmailContact"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgPlus2"
+            android:textColor="@color/tablayout"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textColor="@color/white"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imgPlus3"
+            android:layout_centerVertical="true"
+            android:src="@drawable/plus"/>
+        <com.ezbms.building.buildingapp.view.MyEditText
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="5dp"
+            android:hint="Add notes"
+            android:textColorHint="@color/click_navbar"
+            android:id="@+id/edtNotesContact"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgPlus3"
+            android:textColor="@color/tablayout"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textColor="@color/white"
+        android:background="@drawable/line" />
+</LinearLayout>

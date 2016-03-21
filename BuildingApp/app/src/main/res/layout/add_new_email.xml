@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_layout"
+        android:id="@+id/headerLayout"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <com.ezbms.building.buildingapp.view.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NGƯỜI NHẬN: "
+            android:textSize="@dimen/large_text_size"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/add"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.ezbms.building.buildingapp.view.MyEditText
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/click_navbar"
+        android:id="@+id/edtReceiverMail"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgPlus3"
+        android:textColor="@color/tablayout"
+        android:background="@android:color/transparent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textColor="@color/white"
+        android:background="@drawable/line" />
+    <com.ezbms.building.buildingapp.view.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TIÊU ĐỀ: "
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/large_text_size"
+        android:textColor="@color/white"/>
+
+    <com.ezbms.building.buildingapp.view.MyEditText
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/click_navbar"
+        android:id="@+id/edtTitleMail"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgPlus3"
+        android:textColor="@color/tablayout"
+        android:background="@android:color/transparent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textColor="@color/white"
+        android:background="@drawable/line" />
+    <com.ezbms.building.buildingapp.view.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="NỘI DUNG: "
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/large_text_size"
+        android:textColor="@color/white"/>
+    <com.ezbms.building.buildingapp.view.MyEditText
+        android:id="@+id/edt_request"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:hint=""
+        android:background="#e3e3e3" />
+</LinearLayout>

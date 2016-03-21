@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
@@ -12,6 +13,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.ezbms.building.buildingapp.R;
+import com.ezbms.building.buildingapp.activity.MainActivity;
 import com.ezbms.building.buildingapp.adapter.BillAdapter;
 import com.ezbms.building.buildingapp.adapter.CategoryAdapter;
 import com.ezbms.building.buildingapp.entity.BillEntity;
@@ -21,13 +23,8 @@ import java.util.ArrayList;
 /**
  * Created by Hoang on 3/9/2016.
  */
-public class PayFragment extends MyFragment implements CompoundButton.OnCheckedChangeListener {
-    ListView listAllBill;
-    ArrayList<BillEntity> billEntities = new ArrayList<>();
-    BillAdapter billAdapter;
-    long allMoneyPay = 0;
-    TextView txtAllMoney;
-    Button btnPayAll;
+public class PayFragment extends MyFragment {
+
 
     ImageView btnItemLeft;//header
     TextView txt_title;
@@ -53,9 +50,8 @@ public class PayFragment extends MyFragment implements CompoundButton.OnCheckedC
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        listAllBill = (ListView) findViewById(R.id.listAllBill);
+
         txt_title = (TextView) findViewById(R.id.txt_title);
-        txt_title.setText("Tất cả hóa đơn");
         btnItemLeft = (ImageView) findViewById(R.id.btnItemLeft);
         btnItemLeft.setImageResource(R.drawable.menu_icon);
         btnItemLeft.setVisibility(View.VISIBLE);
@@ -66,47 +62,44 @@ public class PayFragment extends MyFragment implements CompoundButton.OnCheckedC
         listCategoryPay.setVisibility(View.GONE);
         categoryAdapter = new CategoryAdapter(getActivity());
         listCategoryPay.setAdapter(categoryAdapter);
+        //set click cho nav dieu huong
+        listCategoryPay.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                listCategoryPay.setVisibility(View.GONE);
+                selectCategory(position);
+
+            }
+        });
         displayCategory();
-
-        txtAllMoney = (TextView) findViewById(R.id.txtAllMoney);
-        btnPayAll = (Button) findViewById(R.id.btnPayAll);
-        txtAllMoney.setText("0 VND");
-        displayAllBills();
+        //mac dinh cai cuoi dc bieu dien
+        selectCategory(0);
     }
 
-    private void displayAllBills() {
-        billEntities.add(new BillEntity("Tiền Nhà", "200.000 VND", false));
-        billEntities.add(new BillEntity("Tiền Điện","200.000 VND",false));
-        billEntities.add(new BillEntity("Tiền Nước", "200.000 VND", true));
-        billEntities.add(new BillEntity("Tiền Gửi Xe", "200.000 VND", false));
-        billEntities.add(new BillEntity("Tiền Net","200.000 VND",true));
-        billEntities.add(new BillEntity("Tiền Dịch Vụ", "200.000 VND", false));
-        billAdapter = new BillAdapter(getActivity(),billEntities,this);
-        listAllBill.setAdapter(billAdapter);
-    }
-
-    @Override
-    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        int pos = listAllBill.getPositionForView(buttonView);
-        if(pos != ListView.INVALID_POSITION){
-            billEntities.get(pos).setIsChecked(isChecked);
-
-            allMoneyPay = 0;
-            for(int i=0;i<billEntities.size();i++)
-                if(billEntities.get(i).isChecked())
-                    allMoneyPay+=convertStringMoney(billEntities.get(i).getMoneyBill());
-
-            txtAllMoney.setText(allMoneyPay+" VND");
+    private void selectCategory(int position) {
+        switch (position){
+            case 0:
+                ((MainActivity) getActivity()).replaceFragment(new ElectricityAndWaterFragment(), R.id.frameMain1, false);
+                txt_title.setText("Tiền Điện");
+                break;
+            case 1:
+                txt_title.setText("Tiền Nước");
+                ((MainActivity) getActivity()).replaceFragment(new ElectricityAndWaterFragment(), R.id.frameMain1, false);
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                txt_title.setText("Tất Cả Hóa Đơn");
+                ((MainActivity) getActivity()).replaceFragment(new AllPayFragment(), R.id.frameMain1, false);
+                break;
         }
+
     }
 
-    public long convertStringMoney(String money){
-        long longMoney = 0;
-        String s = money.replaceAll("[^\\d.]", "");
-        s = s.replaceAll("\\.","");
-        longMoney = Long.parseLong(s);
-        return longMoney;
-    }
 
     private void displayCategory() {
         categoryAdapter.add("Tiền Điện");

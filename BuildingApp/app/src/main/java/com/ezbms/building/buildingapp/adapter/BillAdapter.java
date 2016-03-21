@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.ezbms.building.buildingapp.R;
 import com.ezbms.building.buildingapp.entity.BillEntity;
+import com.ezbms.building.buildingapp.fragment.AllPayFragment;
 import com.ezbms.building.buildingapp.fragment.PayFragment;
 
 import java.util.List;
@@ -19,12 +20,12 @@ import java.util.List;
  * Created by Hoang on 3/9/2016.
  */
 public class BillAdapter extends ArrayAdapter<BillEntity> {
-    PayFragment payFragment;
+    AllPayFragment payFragment;
 
     private List<BillEntity> billEntities;
     private Context context;
 
-    public BillAdapter(Context context, List<BillEntity> objects,PayFragment payFragment) {
+    public BillAdapter(Context context, List<BillEntity> objects,AllPayFragment payFragment) {
         super(context, R.layout.bill_item, objects);
         this.billEntities = objects;
         this.context = context;
