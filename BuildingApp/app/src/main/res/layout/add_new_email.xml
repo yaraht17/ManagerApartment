@@ -25,7 +25,7 @@
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@drawable/add"
+            android:src="@mipmap/add"
             android:layout_alignParentRight="true"/>
     </RelativeLayout>
     <com.ezbms.building.buildingapp.view.MyEditText
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:textColor="@color/white"
-        android:background="@drawable/line" />
+        android:background="@mipmap/line" />
     <com.ezbms.building.buildingapp.view.MyTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,11 +64,11 @@
         android:layout_toRightOf="@id/imgPlus3"
         android:textColor="@color/tablayout"
         android:background="@android:color/transparent"/>
-    <TextView
+    <com.ezbms.building.buildingapp.view.MyTextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:textColor="@color/white"
-        android:background="@drawable/line" />
+        android:background="@mipmap/line" />
     <com.ezbms.building.buildingapp.view.MyTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

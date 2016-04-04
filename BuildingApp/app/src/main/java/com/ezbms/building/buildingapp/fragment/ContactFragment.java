@@ -63,10 +63,10 @@ public class ContactFragment extends MyFragment {
         adapter = new ItemAdapter(getActivity());
         gridView.setAdapter(adapter);
         //them du lieu bang ham sau
-        adapter.add(new Item(R.drawable.mail,10,"HÒM THƯ"));
-        adapter.add(new Item(R.drawable.chat_icon,0,"CHAT ONLINE"));
-        adapter.add(new Item(R.drawable.lien_he_truc_tuyen,0,"LIÊN HỆ"));
-        adapter.add(new Item(R.drawable.yeu_cau_icon,0,"YÊU CẦU"));
+        adapter.add(new Item(R.mipmap.mail,10,"HÒM THƯ"));
+        adapter.add(new Item(R.mipmap.chat_icon,0,"CHAT ONLINE"));
+        adapter.add(new Item(R.mipmap.lien_he_truc_tuyen,0,"LIÊN HỆ"));
+        adapter.add(new Item(R.mipmap.yeu_cau_icon,0,"YÊU CẦU"));
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

@@ -52,10 +52,10 @@
                     android:focusableInTouchMode="false"
                     android:clickable="false"
                     android:scaleType="centerInside"
-                    android:src="@drawable/dich_vu"
+                    android:src="@mipmap/dich_vu"
                     android:layout_centerInParent="true"/>
 
-                <TextView
+                <com.ezbms.building.buildingapp.view.MyTextView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginTop="5dp"
@@ -88,10 +88,10 @@
                     android:focusableInTouchMode="false"
                     android:clickable="false"
                     android:scaleType="centerInside"
-                    android:src="@drawable/lien_he"
+                    android:src="@mipmap/lien_he"
                     android:layout_centerInParent="true"/>
 
-                <TextView
+                <com.ezbms.building.buildingapp.view.MyTextView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginTop="5dp"
@@ -125,10 +125,10 @@
                     android:focusableInTouchMode="false"
                     android:clickable="false"
                     android:scaleType="centerInside"
-                    android:src="@drawable/home"
+                    android:src="@mipmap/home"
                     android:layout_centerInParent="true"/>
 
-                <TextView
+                <com.ezbms.building.buildingapp.view.MyTextView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginTop="5dp"
@@ -162,10 +162,10 @@
                     android:focusableInTouchMode="false"
                     android:clickable="false"
                     android:scaleType="centerInside"
-                    android:src="@drawable/thanh_toan"
+                    android:src="@mipmap/thanh_toan"
                     android:layout_centerInParent="true"/>
 
-                <TextView
+                <com.ezbms.building.buildingapp.view.MyTextView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginTop="5dp"
@@ -199,10 +199,10 @@
                     android:focusableInTouchMode="false"
                     android:clickable="false"
                     android:scaleType="centerInside"
-                    android:src="@drawable/account"
+                    android:src="@mipmap/account"
                     android:layout_centerInParent="true"/>
 
-                <TextView
+                <com.ezbms.building.buildingapp.view.MyTextView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginTop="5dp"

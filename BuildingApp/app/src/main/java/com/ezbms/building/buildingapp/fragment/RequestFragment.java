@@ -41,12 +41,12 @@ public class RequestFragment extends MyFragment {
         txt_title = (TextView) findViewById(R.id.txt_title);
         txt_title.setText("YÊU CẦU");
         btnItemLeft = (ImageView) findViewById(R.id.btnItemLeft);
-        btnItemLeft.setImageResource(R.drawable.back);
+        btnItemLeft.setImageResource(R.mipmap.back);
         btnItemLeft.setVisibility(View.VISIBLE);
         btnItemLeft.setOnClickListener(this);
 
         btnItemRight = (ImageButton) findViewById(R.id.btnItemRight);
-        btnItemRight.setImageResource(R.drawable.send);
+        btnItemRight.setImageResource(R.mipmap.send);
         btnItemRight.setVisibility(View.VISIBLE);
         btnItemRight.setBackgroundColor(getResources().getColor(R.color.trans));
         btnItemRight.setOnClickListener(this);

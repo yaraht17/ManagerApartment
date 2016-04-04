@@ -7,11 +7,11 @@
     <RelativeLayout
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:background="@drawable/khung_icon">
+        android:background="@mipmap/khung_icon">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/thong_tin_icon"
+            android:src="@mipmap/thong_tin_icon"
             android:layout_centerInParent="true"
             android:id="@+id/imgIconItem"/>
         <com.ezbms.building.buildingapp.view.MyTextView

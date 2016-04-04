@@ -107,11 +107,11 @@ public class MainActivity extends MySlidingMenuActivity {
     private void actionSevice() {
         backAllStackFragment();
         replaceFragment(new ServiceFragment(), R.id.frameMain, false);
-        btnService.setImageResource(R.drawable.dich_vu_click);
-        btnContact.setImageResource(R.drawable.lien_he);
-        btnHome.setImageResource(R.drawable.home);
-        btnPay.setImageResource(R.drawable.thanh_toan);
-        btnAccount.setImageResource(R.drawable.account);
+        btnService.setImageResource(R.mipmap.dich_vu_click);
+        btnContact.setImageResource(R.mipmap.lien_he);
+        btnHome.setImageResource(R.mipmap.home);
+        btnPay.setImageResource(R.mipmap.thanh_toan);
+        btnAccount.setImageResource(R.mipmap.account);
 
         layoutCountService.setBackgroundColor(getResources().getColor(R.color.click_navbar));
         layoutCountContact.setBackgroundColor(getResources().getColor(R.color.tablayout));
@@ -123,11 +123,11 @@ public class MainActivity extends MySlidingMenuActivity {
     private void actionContact() {
         backAllStackFragment();
         replaceFragment(new ContactFragment(), R.id.frameMain, false);
-        btnService.setImageResource(R.drawable.dich_vu);
-        btnContact.setImageResource(R.drawable.lien_he_click);
-        btnHome.setImageResource(R.drawable.home);
-        btnPay.setImageResource(R.drawable.thanh_toan);
-        btnAccount.setImageResource(R.drawable.account);
+        btnService.setImageResource(R.mipmap.dich_vu);
+        btnContact.setImageResource(R.mipmap.lien_he_click);
+        btnHome.setImageResource(R.mipmap.home);
+        btnPay.setImageResource(R.mipmap.thanh_toan);
+        btnAccount.setImageResource(R.mipmap.account);
 
         layoutCountService.setBackgroundColor(getResources().getColor(R.color.tablayout));
         layoutCountContact.setBackgroundColor(getResources().getColor(R.color.click_navbar));
@@ -141,11 +141,11 @@ public class MainActivity extends MySlidingMenuActivity {
         backAllStackFragment();
         replaceFragment(new HomeFragment(), R.id.frameMain, false);
 
-        btnService.setImageResource(R.drawable.dich_vu);
-        btnContact.setImageResource(R.drawable.lien_he);
-        btnHome.setImageResource(R.drawable.home_click);
-        btnPay.setImageResource(R.drawable.thanh_toan);
-        btnAccount.setImageResource(R.drawable.account);
+        btnService.setImageResource(R.mipmap.dich_vu);
+        btnContact.setImageResource(R.mipmap.lien_he);
+        btnHome.setImageResource(R.mipmap.home_click);
+        btnPay.setImageResource(R.mipmap.thanh_toan);
+        btnAccount.setImageResource(R.mipmap.account);
 
         layoutCountService.setBackgroundColor(getResources().getColor(R.color.tablayout));
         layoutCountContact.setBackgroundColor(getResources().getColor(R.color.tablayout));
@@ -158,11 +158,11 @@ public class MainActivity extends MySlidingMenuActivity {
         backAllStackFragment();
         replaceFragment(new PayFragment(), R.id.frameMain, false);
 
-        btnService.setImageResource(R.drawable.dich_vu);
-        btnContact.setImageResource(R.drawable.lien_he);
-        btnHome.setImageResource(R.drawable.home);
-        btnPay.setImageResource(R.drawable.thanh_toan_click);
-        btnAccount.setImageResource(R.drawable.account);
+        btnService.setImageResource(R.mipmap.dich_vu);
+        btnContact.setImageResource(R.mipmap.lien_he);
+        btnHome.setImageResource(R.mipmap.home);
+        btnPay.setImageResource(R.mipmap.thanh_toan_click);
+        btnAccount.setImageResource(R.mipmap.account);
 
         layoutCountService.setBackgroundColor(getResources().getColor(R.color.tablayout));
         layoutCountContact.setBackgroundColor(getResources().getColor(R.color.tablayout));
@@ -175,11 +175,11 @@ public class MainActivity extends MySlidingMenuActivity {
         backAllStackFragment();
         replaceFragment(new AccountFragment(), R.id.frameMain, false);
 
-        btnService.setImageResource(R.drawable.dich_vu);
-        btnContact.setImageResource(R.drawable.lien_he);
-        btnHome.setImageResource(R.drawable.home);
-        btnPay.setImageResource(R.drawable.thanh_toan);
-        btnAccount.setImageResource(R.drawable.account_click);
+        btnService.setImageResource(R.mipmap.dich_vu);
+        btnContact.setImageResource(R.mipmap.lien_he);
+        btnHome.setImageResource(R.mipmap.home);
+        btnPay.setImageResource(R.mipmap.thanh_toan);
+        btnAccount.setImageResource(R.mipmap.account_click);
 
         layoutCountService.setBackgroundColor(getResources().getColor(R.color.tablayout));
         layoutCountContact.setBackgroundColor(getResources().getColor(R.color.tablayout));

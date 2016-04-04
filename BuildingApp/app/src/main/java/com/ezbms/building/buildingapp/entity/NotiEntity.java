@@ -8,6 +8,7 @@ public class NotiEntity extends MyEntity {
     String content;
     String time;
     boolean isHeader;
+    boolean isReaded;
 
     public String getTime() {
         return time;
@@ -17,11 +18,12 @@ public class NotiEntity extends MyEntity {
         return isHeader;
     }
 
-    public NotiEntity(String title, String content,String time) {
+    public NotiEntity(String title, String content,String time,boolean isReaded) {
         this.title = title;
         this.content = content;
         this.time = time;
         this.isHeader = false;
+        this.isReaded = isReaded;
     }
 
     public NotiEntity(String title) {
@@ -35,5 +37,13 @@ public class NotiEntity extends MyEntity {
 
     public String getContent() {
         return content;
+    }
+
+    public boolean isReaded() {
+        return isReaded;
+    }
+
+    public boolean isHeader() {
+        return isHeader;
     }
 }

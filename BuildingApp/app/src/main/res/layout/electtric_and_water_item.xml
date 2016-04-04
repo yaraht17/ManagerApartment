@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:background="@drawable/nau_bg"
+    android:background="@mipmap/nau_bg"
     android:id="@+id/layout_item"
     android:layout_height="60dp">
     <com.ezbms.building.buildingapp.view.MyTextView

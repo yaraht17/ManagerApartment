@@ -11,7 +11,7 @@
         android:orientation="horizontal"
         android:id="@+id/layout_headerNoti"
         android:visibility="gone">
-        <TextView
+        <com.ezbms.building.buildingapp.view.MyTextView
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:layout_gravity="center_vertical"
@@ -31,7 +31,7 @@
             android:textColor="@color/click_navbar"
             android:layout_centerInParent="true"
             android:id="@+id/txtTitleDate"/>
-        <TextView
+        <com.ezbms.building.buildingapp.view.MyTextView
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:layout_gravity="center_vertical"
@@ -64,7 +64,7 @@
                 android:textColor="@color/white"
                 android:text="Tổng tiền: 10.500.000 VND\nThời gian đóng: 24/1/2015 - 24/1/2016" />
         </LinearLayout>
-        <TextView
+        <com.ezbms.building.buildingapp.view.MyTextView
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:id="@+id/lineNoti"

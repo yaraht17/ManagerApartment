@@ -18,9 +18,9 @@
             android:layout_height="80dp"
             android:layout_centerVertical="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/nv1_icon"
+            android:src="@mipmap/nv1_icon"
             app:civ_border_width="2dp"
-            app:civ_border_color="#FF000000"/>
+            app:civ_border_color="@color/tablayout"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -49,7 +49,7 @@
 
     </RelativeLayout>
 
-    <TextView
+    <com.ezbms.building.buildingapp.view.MyTextView
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/tablayout" />

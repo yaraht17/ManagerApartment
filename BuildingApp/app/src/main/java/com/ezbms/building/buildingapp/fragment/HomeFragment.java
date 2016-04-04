@@ -64,10 +64,10 @@ public class HomeFragment extends MyFragment {
         adapter = new ItemAdapter(getActivity());
         gridView.setAdapter(adapter);
         //them du lieu bang ham sau
-        adapter.add(new Item(R.drawable.toa_nha,10,"THÔNG BÁO"));
-        adapter.add(new Item(R.drawable.thong_tin_icon,13,"THÔNG TIN"));
-        adapter.add(new Item(R.drawable.canh_bao_icon,0,"CẢNH CÁO"));
-        adapter.add(new Item(R.drawable.quang_cao_icon,0,"QUẢNG CÁO"));
+        adapter.add(new Item(R.mipmap.toa_nha,10,"THÔNG BÁO"));
+        adapter.add(new Item(R.mipmap.thong_tin_icon,13,"THÔNG TIN"));
+        adapter.add(new Item(R.mipmap.canh_bao_icon,0,"CẢNH CÁO"));
+        adapter.add(new Item(R.mipmap.quang_cao_icon,0,"QUẢNG CÁO"));
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

@@ -57,7 +57,7 @@
                 android:textStyle="bold"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/btnPayAll"
-                android:background="@drawable/btn_thanhtoan"/>
+                android:background="@mipmap/btn_thanhtoan"/>
         </RelativeLayout>
 
 

@@ -39,16 +39,16 @@ public class ElectricAndWaterAdapter extends MyArrayAdapter<ElectricAndWaterEnti
         }
         switch (position%4){
             case 0:
-                holder.layout.setBackgroundResource(R.drawable.do_bg);
+                holder.layout.setBackgroundResource(R.mipmap.do_bg);
                 break;
             case 1:
-                holder.layout.setBackgroundResource(R.drawable.xanh_bg);
+                holder.layout.setBackgroundResource(R.mipmap.xanh_bg);
                 break;
             case 2:
-                holder.layout.setBackgroundResource(R.drawable.vang_bg);
+                holder.layout.setBackgroundResource(R.mipmap.vang_bg);
                 break;
             case 3:
-                holder.layout.setBackgroundResource(R.drawable.nau_bg);
+                holder.layout.setBackgroundResource(R.mipmap.nau_bg);
                 break;
         }
         holder.txtMoney.setText(getItem(position).getMoney()+" vnd");

@@ -47,19 +47,21 @@ public class NotificationFragment extends MyFragment {
         txt_title = (TextView) findViewById(R.id.txt_title);
         txt_title.setText("THÔNG BÁO TỪ BQL TÒA NHÀ");
         btnItemLeft = (ImageView) findViewById(R.id.btnItemLeft);
-        btnItemLeft.setImageResource(R.drawable.back);
+        btnItemLeft.setImageResource(R.mipmap.back);
         btnItemLeft.setVisibility(View.VISIBLE);
         btnItemLeft.setOnClickListener(this);
 
         listView = (ListView) findViewById(R.id.listView);
         adapter = new NotiAdapter(getActivity());
-        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015"));
-        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015"));
-        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015"));
+        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015",false));
+        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015",false));
+        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015",true));
         adapter.add(new NotiEntity("Hôm qua"));
-        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015"));
-        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015"));
-        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015"));
+        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015",true));
+        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015",false));
+        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015",true));
+        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015",true));
+        adapter.add(new NotiEntity("Đóng tiền điện","Tổng tiền: 2.500.000 VND\nThời gian đóng: 24/1/2015 - 24/2/2015","24/1/2015",false));
         listView.setAdapter(adapter);
 
     }

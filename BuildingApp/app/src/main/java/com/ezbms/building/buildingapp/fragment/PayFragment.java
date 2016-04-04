@@ -53,7 +53,7 @@ public class PayFragment extends MyFragment {
 
         txt_title = (TextView) findViewById(R.id.txt_title);
         btnItemLeft = (ImageView) findViewById(R.id.btnItemLeft);
-        btnItemLeft.setImageResource(R.drawable.menu_icon);
+        btnItemLeft.setImageResource(R.mipmap.menu_icon);
         btnItemLeft.setVisibility(View.VISIBLE);
         btnItemLeft.setOnClickListener(this);
 

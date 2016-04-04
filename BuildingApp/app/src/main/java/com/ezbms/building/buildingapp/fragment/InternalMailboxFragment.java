@@ -53,12 +53,12 @@ public class InternalMailboxFragment extends MyFragment {
         txt_title = (TextView) findViewById(R.id.txt_title);
         txt_title.setText("HÒM THƯ NỘI BỘ");
         btnItemLeft = (ImageView) findViewById(R.id.btnItemLeft);
-        btnItemLeft.setImageResource(R.drawable.back);
+        btnItemLeft.setImageResource(R.mipmap.back);
         btnItemLeft.setVisibility(View.VISIBLE);
         btnItemLeft.setOnClickListener(this);
 
         btnItemRight = (ImageButton) findViewById(R.id.btnItemRight);
-        btnItemRight.setImageResource(R.drawable.new_mail_icon);
+        btnItemRight.setImageResource(R.mipmap.new_mail_icon);
         btnItemRight.setVisibility(View.VISIBLE);
         btnItemRight.setBackgroundColor(getResources().getColor(R.color.trans));
         btnItemRight.setOnClickListener(this);
@@ -83,13 +83,13 @@ public class InternalMailboxFragment extends MyFragment {
                 SwipeMenuItem editItem = new SwipeMenuItem(
                         getActivity().getApplicationContext());
                 // set item background
-                editItem.setBackground(R.drawable.reply_bg);
+                editItem.setBackground(R.mipmap.reply_bg);
                 // set item width
                 editItem.setWidth(dp2px(90));
                 // set item title
                 editItem.setTitle("Reply");
 
-                editItem.setIcon(R.drawable.reply_icon);
+                editItem.setIcon(R.mipmap.reply_icon);
                 // set item title fontsize
                 editItem.setTitleSize(15);
                 // set item title font color
@@ -101,11 +101,11 @@ public class InternalMailboxFragment extends MyFragment {
                 SwipeMenuItem deleteItem = new SwipeMenuItem(
                         getActivity().getApplicationContext());
                 // set item background
-                deleteItem.setBackground(R.drawable.del_bg);
+                deleteItem.setBackground(R.mipmap.del_bg);
                 // set item width
                 deleteItem.setWidth(dp2px(90));
                 // set a icon
-                deleteItem.setIcon(R.drawable.del_icon);
+                deleteItem.setIcon(R.mipmap.del_icon);
 
                 deleteItem.setTitleSize(15);
                 deleteItem.setTitle("Delete");

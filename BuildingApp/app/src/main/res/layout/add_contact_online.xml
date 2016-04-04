@@ -23,7 +23,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_centerVertical="true"
-            android:src="@drawable/logo_conmpany"
+            android:src="@mipmap/logo_conmpany"
             app:civ_border_width="2dp"
             app:civ_border_color="#FF000000"/>
 
@@ -41,7 +41,7 @@
             android:layout_marginBottom="@dimen/small_margin"
             android:textStyle="bold"
             android:text="Tên Liên Lạc"/>
-            <EditText
+            <com.ezbms.building.buildingapp.view.MyEditText
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:layout_marginTop="7dp"
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:textColor="@color/white"
-            android:background="@drawable/line" />
+            android:background="@mipmap/line" />
         </LinearLayout>
     </RelativeLayout>
 
@@ -68,8 +68,8 @@
             android:layout_height="20dp"
             android:id="@+id/imgPlus"
             android:layout_centerVertical="true"
-            android:src="@drawable/plus"/>
-        <EditText
+            android:src="@mipmap/plus"/>
+        <com.ezbms.building.buildingapp.view.MyEditText
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_marginTop="7dp"
@@ -87,7 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:textColor="@color/white"
-        android:background="@drawable/line" />
+        android:background="@mipmap/line" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -100,7 +100,7 @@
             android:layout_height="20dp"
             android:id="@+id/imgPlus1"
             android:layout_centerVertical="true"
-            android:src="@drawable/plus"/>
+            android:src="@mipmap/plus"/>
         <com.ezbms.building.buildingapp.view.MyEditText
             android:layout_width="match_parent"
             android:layout_height="25dp"
@@ -114,11 +114,11 @@
             android:textColor="@color/tablayout"
             android:background="@android:color/transparent"/>
     </RelativeLayout>
-    <TextView
+    <com.ezbms.building.buildingapp.view.MyTextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:textColor="@color/white"
-        android:background="@drawable/line" />
+        android:background="@mipmap/line" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -131,7 +131,7 @@
             android:layout_height="20dp"
             android:id="@+id/imgPlus2"
             android:layout_centerVertical="true"
-            android:src="@drawable/plus"/>
+            android:src="@mipmap/plus"/>
         <com.ezbms.building.buildingapp.view.MyEditText
             android:layout_width="match_parent"
             android:layout_height="25dp"
@@ -150,7 +150,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:textColor="@color/white"
-        android:background="@drawable/line" />
+        android:background="@mipmap/line" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -163,7 +163,7 @@
             android:layout_height="20dp"
             android:id="@+id/imgPlus3"
             android:layout_centerVertical="true"
-            android:src="@drawable/plus"/>
+            android:src="@mipmap/plus"/>
         <com.ezbms.building.buildingapp.view.MyEditText
             android:layout_width="match_parent"
             android:layout_height="25dp"
@@ -177,9 +177,9 @@
             android:textColor="@color/tablayout"
             android:background="@android:color/transparent"/>
     </RelativeLayout>
-    <TextView
+    <com.ezbms.building.buildingapp.view.MyTextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:textColor="@color/white"
-        android:background="@drawable/line" />
+        android:background="@mipmap/line" />
 </LinearLayout>

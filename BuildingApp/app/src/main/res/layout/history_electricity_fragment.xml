@@ -17,7 +17,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="10dp"
-        android:src="@drawable/bieudo"/>
+        android:src="@mipmap/bieudo"/>
     <com.ezbms.building.buildingapp.view.MyTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/lich"
+            android:src="@mipmap/lich"
             android:layout_toRightOf="@id/txt_month"
             android:layout_marginLeft="10dp"
             android:id="@+id/imgMonth"/>

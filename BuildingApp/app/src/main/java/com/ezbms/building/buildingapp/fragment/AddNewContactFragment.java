@@ -60,12 +60,12 @@ public class AddNewContactFragment extends MyFragment implements AppConstants {
         txt_title = (TextView) findViewById(R.id.txt_title);
         txt_title.setText("THÊM LIÊN LẠC MỚI");
         btnItemLeft = (ImageView) findViewById(R.id.btnItemLeft);
-        btnItemLeft.setImageResource(R.drawable.back);
+        btnItemLeft.setImageResource(R.mipmap.back);
         btnItemLeft.setVisibility(View.VISIBLE);
         btnItemLeft.setOnClickListener(this);
 
         btnItemRight = (ImageButton) findViewById(R.id.btnItemRight);
-        btnItemRight.setImageResource(R.drawable.xac_nhan);
+        btnItemRight.setImageResource(R.mipmap.xac_nhan);
         btnItemRight.setVisibility(View.VISIBLE);
         btnItemRight.setBackgroundColor(getResources().getColor(R.color.trans));
         btnItemRight.setOnClickListener(this);

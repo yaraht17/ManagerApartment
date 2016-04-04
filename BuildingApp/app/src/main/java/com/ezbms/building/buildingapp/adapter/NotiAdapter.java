@@ -52,7 +52,12 @@ public class NotiAdapter extends MyArrayAdapter<NotiEntity> {
             if(position+1 < getCount()){
                 if(getItem(position+1).IsHeader()){
                     holder.lineNoti.setVisibility(View.GONE);
+
                 }
+            }
+            if(getItem(position).isReaded()){
+                holder.txt_title.setTextColor(context.getResources().getColor(R.color.text_readed));
+                holder.txt_content.setTextColor(context.getResources().getColor(R.color.text_readed));
             }
         }
 

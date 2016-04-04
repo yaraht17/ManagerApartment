@@ -18,9 +18,9 @@
             android:layout_height="80dp"
             android:layout_centerVertical="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/nv_icon"
+            android:src="@mipmap/nv_icon"
             app:civ_border_width="2dp"
-            app:civ_border_color="#FF000000"/>
+            app:civ_border_color="@color/tablayout"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -60,7 +60,7 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/lien_he_truc_tuyen"
+            android:src="@mipmap/lien_he_truc_tuyen"
             android:layout_marginRight="2dp"
             android:layout_alignParentRight="true"
             android:id="@+id/btnCall"

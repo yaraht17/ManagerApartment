@@ -15,7 +15,7 @@
         android:textSize="15sp"
         android:text="Tiền Nhà"
         />
-    <TextView
+    <com.ezbms.building.buildingapp.view.MyTextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/tablayout" />

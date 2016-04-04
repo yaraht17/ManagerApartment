@@ -53,7 +53,7 @@ public class ServiceFragment extends MyFragment {
         txt_title = (TextView) findViewById(R.id.txt_title);
         txt_title.setText("DỊCH VỤ VỆ SINH");
         btnItemLeft = (ImageView) findViewById(R.id.btnItemLeft);
-        btnItemLeft.setImageResource(R.drawable.menu_icon);
+        btnItemLeft.setImageResource(R.mipmap.menu_icon);
         btnItemLeft.setVisibility(View.VISIBLE);
 
         //nav diều hướng

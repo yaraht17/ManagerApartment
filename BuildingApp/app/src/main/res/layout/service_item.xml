@@ -16,9 +16,9 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_centerVertical="true"
-            android:src="@drawable/img_clearer"
+            android:src="@mipmap/img_clearer"
             app:civ_border_width="2dp"
-            app:civ_border_color="#FF000000"/>
+            app:civ_border_color="@color/tablayout"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -44,13 +44,15 @@
                 android:layout_marginBottom="5dp"
                 android:text="Join the millions of people saving money by switching to TextNow" />
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:paddingRight="10dp">
                 <com.ezbms.building.buildingapp.view.MyButton
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
                     android:background="@drawable/oval_btn_bg"
                     android:text="ĐĂNG KÍ"
                     android:textSize="12sp"
@@ -60,9 +62,11 @@
                     android:layout_centerVertical="true"
                     android:id="@+id/btnRegisterService" />
                 <com.ezbms.building.buildingapp.view.MyButton
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/btn_lienhe"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:background="@mipmap/btn_lienhe"
                     android:text="LIÊN HỆ"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
@@ -71,12 +75,12 @@
                     android:layout_centerVertical="true"
                     android:id="@+id/btnContactService"
                     android:layout_alignParentRight="true"/>
-            </RelativeLayout>
+            </LinearLayout>
         </LinearLayout>
 
     </RelativeLayout>
 
-    <TextView
+    <com.ezbms.building.buildingapp.view.MyTextView
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/tablayout" />

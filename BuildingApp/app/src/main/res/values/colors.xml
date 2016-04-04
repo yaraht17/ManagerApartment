@@ -10,4 +10,5 @@
     <color name="text_name_service">#00a89a</color>
     <color name="click_navbar">#026a63</color>
     <color name="trans">#00000000</color>
+    <color name="text_readed">#b2b2b2</color>
 </resources>
